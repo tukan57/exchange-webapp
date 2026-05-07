@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Analyzer - Portál</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Kurzovní Lístek</h2>
+            </div>
+            <nav>
+                <button onclick="showSection('dashboard')" class="nav-link active" id="nav-dashboard">
+                    <i>📊</i> Dashboard
+                </button>
+                <button onclick="showSection('settings')" class="nav-link" id="nav-settings">
+                    <i>⚙️</i> Nastavení
+                </button>
+            </nav>
+            <div class="sidebar-footer">
+                <button onclick="logout()" class="btn-logout">Odhlásit se</button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content">
+            <header class="top-bar">
+                <h1 id="section-title">Dashboard</h1>
+                <div class="user-profile">
+                    <span id="username-display">Uživatel</span>
+                </div>
+            </header>
+
+            <!-- Section: Dashboard -->
+            <section id="dashboard-section" class="app-section">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-label">Nejsilnější měna</span>
+                        <div class="stat-value" id="strongestCurrency">-</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">Nejslabší měna</span>
+                        <div class="stat-value" id="weakestCurrency">-</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">Průměrný kurz</span>
+                        <div class="stat-value" id="avgRate">-</div>
+                    </div>
+                </div>
+
+                <div class="card chart-card">
+                    <h3>Vizualizace kurzů (vůči <span class="base-currency-tag">EUR</span>)</h3>
+                    <canvas id="rateChart"></canvas>
+                </div>
+
+                <div class="card table-card">
+                    <h3>Detailní přehled</h3>
+                    <table id="currencyTable">
+                        <thead>
+                            <tr>
+                                <th>Měna</th>
+                                <th>Hodnota</th>
+                                <th>Trend</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dynamicky plněno -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Section: Settings -->
+            <section id="settings-section" class="app-section" style="display: none;">
+                <div class="card settings-card">
+                    <h2>Konfigurace systému</h2>
+                    <form id="settingsForm">
+                        <div class="form-group">
+                            <label>Základní měna (Base)</label>
+                            <select id="baseCurrencySelect" class="form-control">
+                                <option value="CZK">CZK - Česká koruna</option>
+                                <option value="EUR" selected>EUR - Euro</option>
+                                <option value="USD">USD - Americký dolar</option>
+                                <option value="GBP">GBP - Britská libra</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Sledované měny</label>
+                            <div class="checkbox-grid" id="symbolsGroup">
+                                <label class="checkbox-item"><input type="checkbox" value="CZK" checked> CZK</label>
+                                <label class="checkbox-item"><input type="checkbox" value="USD" checked> USD</label>
+                                <label class="checkbox-item"><input type="checkbox" value="GBP" checked> GBP</label>
+                                <label class="checkbox-item"><input type="checkbox" value="PLN"> PLN</label>
+                                <label class="checkbox-item"><input type="checkbox" value="HUF"> HUF</label>
+                                <label class="checkbox-item"><input type="checkbox" value="CHF"> CHF</label>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-save">Uložit preference</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="../static/main.js"></script>
+</body>
+</html>

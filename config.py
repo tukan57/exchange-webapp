@@ -6,3 +6,5 @@ class Config:
     BASE_URL = 'https://api.exchangerate.host/'
     SETTINGS_FILE = 'data/settings.json'
     LOG_FILE = 'data/app.log'
+    USERNAME = 'admin'
+    PASSWORD = 'pswd123'
