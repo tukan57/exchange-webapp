@@ -295,29 +295,3 @@
 2026-05-07 22:53:25,039 INFO:  * Restarting with stat
 2026-05-07 22:53:25,737 WARNING:  * Debugger is active!
 2026-05-07 22:53:25,745 INFO:  * Debugger PIN: 142-472-412
-2026-05-07 22:53:28,156 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2026-05-07 22:53:28,156 INFO: [33mPress CTRL+C to quit[0m
-2026-05-07 22:53:28,158 INFO:  * Restarting with stat
-2026-05-07 22:53:29,458 WARNING:  * Debugger is active!
-2026-05-07 22:53:29,468 INFO:  * Debugger PIN: 142-472-412
-2026-05-07 22:53:32,312 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
-2026-05-07 22:53:32,318 INFO: 127.0.0.1 - - [07/May/2026 22:53:32] "GET / HTTP/1.1" 200 -
-2026-05-07 22:53:32,587 INFO: 127.0.0.1 - - [07/May/2026 22:53:32] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
-2026-05-07 22:53:32,607 INFO: 127.0.0.1 - - [07/May/2026 22:53:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-2026-05-07 22:53:32,686 INFO: 127.0.0.1 - - [07/May/2026 22:53:32] "GET /api/check-auth HTTP/1.1" 200 -
-2026-05-07 22:53:33,613 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
-2026-05-07 22:53:33,614 INFO: 127.0.0.1 - - [07/May/2026 22:53:33] "GET /api/rates HTTP/1.1" 200 -
-2026-05-07 22:53:36,396 INFO: 127.0.0.1 - - [07/May/2026 22:53:36] "[32mGET /logout HTTP/1.1[0m" 302 -
-2026-05-07 22:53:36,405 INFO: 127.0.0.1 - - [07/May/2026 22:53:36] "GET /login HTTP/1.1" 200 -
-2026-05-07 22:53:36,440 INFO: 127.0.0.1 - - [07/May/2026 22:53:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-2026-05-07 22:53:36,442 INFO: 127.0.0.1 - - [07/May/2026 22:53:36] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
-2026-05-07 22:53:42,329 INFO: 127.0.0.1 - - [07/May/2026 22:53:42] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
-2026-05-07 22:53:49,520 INFO: 127.0.0.1 - - [07/May/2026 22:53:49] "POST /login HTTP/1.1" 200 -
-2026-05-07 22:53:50,491 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
-2026-05-07 22:53:50,493 INFO: 127.0.0.1 - - [07/May/2026 22:53:50] "GET / HTTP/1.1" 200 -
-2026-05-07 22:53:50,520 INFO: 127.0.0.1 - - [07/May/2026 22:53:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-2026-05-07 22:53:50,530 INFO: 127.0.0.1 - - [07/May/2026 22:53:50] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
-2026-05-07 22:53:50,542 INFO: 127.0.0.1 - - [07/May/2026 22:53:50] "GET /api/check-auth HTTP/1.1" 200 -
-2026-05-07 22:53:51,593 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
-2026-05-07 22:53:51,594 INFO: 127.0.0.1 - - [07/May/2026 22:53:51] "GET /api/rates HTTP/1.1" 200 -
