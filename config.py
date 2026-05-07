@@ -8,3 +8,4 @@ class Config:
     LOG_FILE = 'data/app.log'
     USERNAME = 'admin'
     PASSWORD = 'pswd123'
+    USE_MOCK_DATA = True
