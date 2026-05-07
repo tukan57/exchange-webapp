@@ -344,3 +344,5 @@
 2026-05-07 23:53:43,132 INFO: 127.0.0.1 - - [07/May/2026 23:53:43] "GET /api/rates HTTP/1.1" 200 -
 2026-05-07 23:54:22,127 INFO:  * Detected change in 'f:\\Škola\\exchange-webapp\\config.py', reloading
 2026-05-07 23:54:22,190 INFO:  * Restarting with stat
+2026-05-07 23:54:22,890 WARNING:  * Debugger is active!
+2026-05-07 23:54:22,899 INFO:  * Debugger PIN: 142-472-412
