@@ -1,5 +1,5 @@
-from flask import Blueprint, render_template, request, redirect, url_for, session, current_app
-from config import Config  # Importujeme vaši konfiguraci
+from flask import Blueprint, render_template, request, session, jsonify, redirect, url_for
+from config import Config
 
 auth_bp = Blueprint('auth', __name__)
 
@@ -9,11 +9,15 @@ def login():
         username = request.form.get('username')
         password = request.form.get('password')
 
-        # Porovnání s údaji v Configu
         if username == Config.USERNAME and password == Config.PASSWORD:
-            session['user_id'] = username  # Přihlášení úspěšné
-            return redirect(url_for('views.dashboard'))
-    
-        return "Neplatné údaje", 401
+            session['user_id'] = username
+            return jsonify({"success": True, "message": "Přihlášení úspěšné"}), 200
+        
+        return jsonify({"success": False, "message": "Neplatné údaje"}), 401
         
     return render_template('login.html')
+
+@auth_bp.route('/logout')
+def logout():
+    session.clear()
+    return redirect(url_for('auth.login'))

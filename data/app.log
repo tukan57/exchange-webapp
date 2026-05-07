@@ -1,0 +1,323 @@
+2026-05-07 22:19:59,200 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-07 22:19:59,200 INFO: [33mPress CTRL+C to quit[0m
+2026-05-07 22:19:59,210 INFO:  * Restarting with stat
+2026-05-07 22:20:00,510 WARNING:  * Debugger is active!
+2026-05-07 22:20:00,518 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:20:17,520 INFO: 127.0.0.1 - - [07/May/2026 22:20:17] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-07 22:20:17,549 INFO: 127.0.0.1 - - [07/May/2026 22:20:17] "GET /login HTTP/1.1" 200 -
+2026-05-07 22:20:17,898 INFO: 127.0.0.1 - - [07/May/2026 22:20:17] "GET /static/main.js HTTP/1.1" 200 -
+2026-05-07 22:20:17,909 INFO: 127.0.0.1 - - [07/May/2026 22:20:17] "GET /static/styles.css HTTP/1.1" 200 -
+2026-05-07 22:20:17,952 INFO: 127.0.0.1 - - [07/May/2026 22:20:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-05-07 22:20:33,407 INFO: 127.0.0.1 - - [07/May/2026 22:20:33] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-05-07 22:20:39,902 INFO: 127.0.0.1 - - [07/May/2026 22:20:39] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-05-07 22:20:41,645 INFO: 127.0.0.1 - - [07/May/2026 22:20:41] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-05-07 22:20:52,281 INFO: 127.0.0.1 - - [07/May/2026 22:20:52] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-07 22:20:52,286 INFO: 127.0.0.1 - - [07/May/2026 22:20:52] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-07 22:20:52,291 INFO: 127.0.0.1 - - [07/May/2026 22:20:52] "GET /login HTTP/1.1" 200 -
+2026-05-07 22:20:52,305 INFO: 127.0.0.1 - - [07/May/2026 22:20:52] "GET /login HTTP/1.1" 200 -
+2026-05-07 22:20:52,339 INFO: 127.0.0.1 - - [07/May/2026 22:20:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-05-07 22:20:52,341 INFO: 127.0.0.1 - - [07/May/2026 22:20:52] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+2026-05-07 22:21:02,599 INFO: 127.0.0.1 - - [07/May/2026 22:21:02] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-07 22:21:02,604 INFO: 127.0.0.1 - - [07/May/2026 22:21:02] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-07 22:21:02,608 INFO: 127.0.0.1 - - [07/May/2026 22:21:02] "GET /login HTTP/1.1" 200 -
+2026-05-07 22:21:02,623 INFO: 127.0.0.1 - - [07/May/2026 22:21:02] "GET /login HTTP/1.1" 200 -
+2026-05-07 22:21:02,654 INFO: 127.0.0.1 - - [07/May/2026 22:21:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-05-07 22:21:02,658 INFO: 127.0.0.1 - - [07/May/2026 22:21:02] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+2026-05-07 22:22:05,043 INFO: 127.0.0.1 - - [07/May/2026 22:22:05] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-05-07 22:22:12,763 INFO: 127.0.0.1 - - [07/May/2026 22:22:12] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-07 22:22:12,768 INFO: 127.0.0.1 - - [07/May/2026 22:22:12] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-07 22:22:12,772 INFO: 127.0.0.1 - - [07/May/2026 22:22:12] "GET /login HTTP/1.1" 200 -
+2026-05-07 22:22:12,786 INFO: 127.0.0.1 - - [07/May/2026 22:22:12] "GET /login HTTP/1.1" 200 -
+2026-05-07 22:22:12,818 INFO: 127.0.0.1 - - [07/May/2026 22:22:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-05-07 22:22:12,820 INFO: 127.0.0.1 - - [07/May/2026 22:22:12] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+2026-05-07 22:24:12,851 INFO:  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\auth.py', reloading
+2026-05-07 22:24:12,916 INFO:  * Restarting with stat
+2026-05-07 22:24:13,622 WARNING:  * Debugger is active!
+2026-05-07 22:24:13,630 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:24:27,757 INFO:  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\auth.py', reloading
+2026-05-07 22:24:27,821 INFO:  * Restarting with stat
+2026-05-07 22:24:28,465 WARNING:  * Debugger is active!
+2026-05-07 22:24:28,473 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:25:12,260 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-07 22:25:12,260 INFO: [33mPress CTRL+C to quit[0m
+2026-05-07 22:25:12,262 INFO:  * Restarting with stat
+2026-05-07 22:25:12,900 WARNING:  * Debugger is active!
+2026-05-07 22:25:12,908 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:25:21,975 INFO:  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\auth.py', reloading
+2026-05-07 22:25:22,056 INFO:  * Restarting with stat
+2026-05-07 22:25:22,778 WARNING:  * Debugger is active!
+2026-05-07 22:25:22,786 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:25:31,128 INFO: 127.0.0.1 - - [07/May/2026 22:25:31] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-07 22:25:31,145 INFO: 127.0.0.1 - - [07/May/2026 22:25:31] "GET /login HTTP/1.1" 200 -
+2026-05-07 22:25:31,435 INFO: 127.0.0.1 - - [07/May/2026 22:25:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-05-07 22:25:31,457 INFO: 127.0.0.1 - - [07/May/2026 22:25:31] "GET /static/main.js HTTP/1.1" 200 -
+2026-05-07 22:25:35,993 INFO: 127.0.0.1 - - [07/May/2026 22:25:35] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-05-07 22:25:42,113 INFO: 127.0.0.1 - - [07/May/2026 22:25:42] "POST /login HTTP/1.1" 200 -
+2026-05-07 22:25:42,128 INFO: 127.0.0.1 - - [07/May/2026 22:25:42] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-07 22:25:42,137 INFO: 127.0.0.1 - - [07/May/2026 22:25:42] "GET /login HTTP/1.1" 200 -
+2026-05-07 22:25:42,183 INFO: 127.0.0.1 - - [07/May/2026 22:25:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-05-07 22:25:42,184 INFO: 127.0.0.1 - - [07/May/2026 22:25:42] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+2026-05-07 22:26:22,348 INFO: 127.0.0.1 - - [07/May/2026 22:26:22] "POST /login HTTP/1.1" 200 -
+2026-05-07 22:26:22,364 INFO: 127.0.0.1 - - [07/May/2026 22:26:22] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-07 22:26:22,373 INFO: 127.0.0.1 - - [07/May/2026 22:26:22] "GET /login HTTP/1.1" 200 -
+2026-05-07 22:26:22,404 INFO: 127.0.0.1 - - [07/May/2026 22:26:22] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-05-07 22:26:22,413 INFO: 127.0.0.1 - - [07/May/2026 22:26:22] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+2026-05-07 22:27:42,361 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-07 22:27:42,361 INFO: [33mPress CTRL+C to quit[0m
+2026-05-07 22:27:42,363 INFO:  * Restarting with stat
+2026-05-07 22:27:43,003 WARNING:  * Debugger is active!
+2026-05-07 22:27:43,010 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:27:44,556 INFO: 127.0.0.1 - - [07/May/2026 22:27:44] "GET /login HTTP/1.1" 200 -
+2026-05-07 22:27:44,830 INFO: 127.0.0.1 - - [07/May/2026 22:27:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-05-07 22:27:44,841 INFO: 127.0.0.1 - - [07/May/2026 22:27:44] "GET /static/main.js HTTP/1.1" 200 -
+2026-05-07 22:27:50,407 INFO: 127.0.0.1 - - [07/May/2026 22:27:50] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-07 22:27:50,418 INFO: 127.0.0.1 - - [07/May/2026 22:27:50] "GET /login HTTP/1.1" 200 -
+2026-05-07 22:27:50,463 INFO: 127.0.0.1 - - [07/May/2026 22:27:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-05-07 22:27:50,463 INFO: 127.0.0.1 - - [07/May/2026 22:27:50] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+2026-05-07 22:27:57,284 INFO: 127.0.0.1 - - [07/May/2026 22:27:57] "POST /login HTTP/1.1" 200 -
+2026-05-07 22:27:57,302 INFO: 127.0.0.1 - - [07/May/2026 22:27:57] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-07 22:27:57,312 INFO: 127.0.0.1 - - [07/May/2026 22:27:57] "GET /login HTTP/1.1" 200 -
+2026-05-07 22:27:57,354 INFO: 127.0.0.1 - - [07/May/2026 22:27:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-05-07 22:27:57,356 INFO: 127.0.0.1 - - [07/May/2026 22:27:57] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+2026-05-07 22:32:36,667 INFO:  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\views.py', reloading
+2026-05-07 22:32:36,733 INFO:  * Restarting with stat
+2026-05-07 22:32:37,421 WARNING:  * Debugger is active!
+2026-05-07 22:32:37,430 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:32:42,355 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-07 22:32:42,355 INFO: [33mPress CTRL+C to quit[0m
+2026-05-07 22:32:42,357 INFO:  * Restarting with stat
+2026-05-07 22:32:43,119 WARNING:  * Debugger is active!
+2026-05-07 22:32:43,128 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:33:02,709 INFO: 127.0.0.1 - - [07/May/2026 22:33:02] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-05-07 22:33:02,997 INFO: 127.0.0.1 - - [07/May/2026 22:33:02] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-05-07 22:33:03,003 INFO: 127.0.0.1 - - [07/May/2026 22:33:03] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-05-07 22:33:03,064 INFO: 127.0.0.1 - - [07/May/2026 22:33:03] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=DfizMb9o7biQ6eV0raCP HTTP/1.1" 200 -
+2026-05-07 22:33:03,078 INFO: 127.0.0.1 - - [07/May/2026 22:33:03] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-05-07 22:33:06,259 INFO:  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\views.py', reloading
+2026-05-07 22:33:06,319 INFO:  * Restarting with stat
+2026-05-07 22:33:06,967 WARNING:  * Debugger is active!
+2026-05-07 22:33:06,976 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:33:20,057 INFO:  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\views.py', reloading
+2026-05-07 22:33:20,117 INFO:  * Restarting with stat
+2026-05-07 22:33:22,480 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-07 22:33:22,480 INFO: [33mPress CTRL+C to quit[0m
+2026-05-07 22:33:22,482 INFO:  * Restarting with stat
+2026-05-07 22:33:23,210 WARNING:  * Debugger is active!
+2026-05-07 22:33:23,218 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:33:24,806 INFO: 127.0.0.1 - - [07/May/2026 22:33:24] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-07 22:33:24,819 INFO: 127.0.0.1 - - [07/May/2026 22:33:24] "GET /login HTTP/1.1" 200 -
+2026-05-07 22:33:25,117 INFO: 127.0.0.1 - - [07/May/2026 22:33:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-05-07 22:33:25,126 INFO: 127.0.0.1 - - [07/May/2026 22:33:25] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+2026-05-07 22:33:29,265 INFO:  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\views.py', reloading
+2026-05-07 22:33:29,325 INFO:  * Restarting with stat
+2026-05-07 22:33:29,959 WARNING:  * Debugger is active!
+2026-05-07 22:33:29,967 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:33:33,612 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-07 22:33:33,612 INFO: [33mPress CTRL+C to quit[0m
+2026-05-07 22:33:33,614 INFO:  * Restarting with stat
+2026-05-07 22:33:34,273 WARNING:  * Debugger is active!
+2026-05-07 22:33:34,282 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:33:35,329 INFO: 127.0.0.1 - - [07/May/2026 22:33:35] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-05-07 22:33:35,617 INFO: 127.0.0.1 - - [07/May/2026 22:33:35] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-05-07 22:33:35,882 INFO: 127.0.0.1 - - [07/May/2026 22:33:35] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-05-07 22:33:35,903 INFO: 127.0.0.1 - - [07/May/2026 22:33:35] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-05-07 22:33:35,927 INFO: 127.0.0.1 - - [07/May/2026 22:33:35] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=HMapKjlH7no92ALNjWEE HTTP/1.1" 200 -
+2026-05-07 22:33:35,942 INFO: 127.0.0.1 - - [07/May/2026 22:33:35] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-05-07 22:35:40,965 INFO:  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\views.py', reloading
+2026-05-07 22:35:41,029 INFO:  * Restarting with stat
+2026-05-07 22:35:43,956 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-07 22:35:43,957 INFO: [33mPress CTRL+C to quit[0m
+2026-05-07 22:35:43,958 INFO:  * Restarting with stat
+2026-05-07 22:35:44,766 WARNING:  * Debugger is active!
+2026-05-07 22:35:44,775 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:35:47,735 INFO: 127.0.0.1 - - [07/May/2026 22:35:47] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-05-07 22:35:47,997 INFO: 127.0.0.1 - - [07/May/2026 22:35:47] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-05-07 22:35:48,020 INFO: 127.0.0.1 - - [07/May/2026 22:35:48] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-05-07 22:35:48,041 INFO: 127.0.0.1 - - [07/May/2026 22:35:48] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=NqbzXVkBSNJjVnafcpVI HTTP/1.1" 200 -
+2026-05-07 22:35:48,051 INFO: 127.0.0.1 - - [07/May/2026 22:35:48] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-05-07 22:37:18,290 INFO:  * Detected change in 'f:\\Škola\\exchange-webapp\\services\\storage_service.py', reloading
+2026-05-07 22:37:18,351 INFO:  * Restarting with stat
+2026-05-07 22:37:19,005 WARNING:  * Debugger is active!
+2026-05-07 22:37:19,013 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:37:33,133 INFO:  * Detected change in 'f:\\Škola\\exchange-webapp\\services\\storage_service.py', reloading
+2026-05-07 22:37:33,199 INFO:  * Restarting with stat
+2026-05-07 22:37:33,859 WARNING:  * Debugger is active!
+2026-05-07 22:37:33,867 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:37:37,908 INFO:  * Detected change in 'f:\\Škola\\exchange-webapp\\services\\storage_service.py', reloading
+2026-05-07 22:37:37,986 INFO:  * Restarting with stat
+2026-05-07 22:37:38,674 WARNING:  * Debugger is active!
+2026-05-07 22:37:38,682 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:38:08,035 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-07 22:38:08,035 INFO: [33mPress CTRL+C to quit[0m
+2026-05-07 22:38:08,037 INFO:  * Restarting with stat
+2026-05-07 22:38:08,679 WARNING:  * Debugger is active!
+2026-05-07 22:38:08,687 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:38:12,205 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
+2026-05-07 22:38:12,212 INFO: 127.0.0.1 - - [07/May/2026 22:38:12] "GET / HTTP/1.1" 200 -
+2026-05-07 22:38:12,506 INFO: 127.0.0.1 - - [07/May/2026 22:38:12] "GET /static/main.js HTTP/1.1" 200 -
+2026-05-07 22:38:12,509 INFO: 127.0.0.1 - - [07/May/2026 22:38:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-05-07 22:38:12,550 INFO: 127.0.0.1 - - [07/May/2026 22:38:12] "GET /api/check-auth HTTP/1.1" 200 -
+2026-05-07 22:38:13,452 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
+2026-05-07 22:38:13,454 INFO: 127.0.0.1 - - [07/May/2026 22:38:13] "GET /api/rates HTTP/1.1" 200 -
+2026-05-07 22:38:45,476 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-07 22:38:45,476 INFO: [33mPress CTRL+C to quit[0m
+2026-05-07 22:38:45,477 INFO:  * Restarting with stat
+2026-05-07 22:38:46,291 WARNING:  * Debugger is active!
+2026-05-07 22:38:46,300 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:38:49,940 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-07 22:38:49,941 INFO: [33mPress CTRL+C to quit[0m
+2026-05-07 22:38:49,942 INFO:  * Restarting with stat
+2026-05-07 22:38:50,638 WARNING:  * Debugger is active!
+2026-05-07 22:38:50,647 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:38:53,255 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
+2026-05-07 22:38:53,260 INFO: 127.0.0.1 - - [07/May/2026 22:38:53] "GET / HTTP/1.1" 200 -
+2026-05-07 22:38:53,514 INFO: 127.0.0.1 - - [07/May/2026 22:38:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-05-07 22:38:53,533 INFO: 127.0.0.1 - - [07/May/2026 22:38:53] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+2026-05-07 22:39:02,381 INFO: 127.0.0.1 - - [07/May/2026 22:39:02] "GET /static/styles.css HTTP/1.1" 200 -
+2026-05-07 22:39:02,382 INFO: 127.0.0.1 - - [07/May/2026 22:39:02] "GET /static/main.js HTTP/1.1" 200 -
+2026-05-07 22:39:03,381 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
+2026-05-07 22:39:03,383 INFO: 127.0.0.1 - - [07/May/2026 22:39:03] "GET /api/rates HTTP/1.1" 200 -
+2026-05-07 22:40:20,149 INFO: 127.0.0.1 - - [07/May/2026 22:40:20] "[33mGET /logout HTTP/1.1[0m" 404 -
+2026-05-07 22:40:24,926 INFO: 127.0.0.1 - - [07/May/2026 22:40:24] "[33mGET /logout.html HTTP/1.1[0m" 404 -
+2026-05-07 22:40:59,066 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
+2026-05-07 22:40:59,068 INFO: 127.0.0.1 - - [07/May/2026 22:40:59] "GET / HTTP/1.1" 200 -
+2026-05-07 22:40:59,102 INFO: 127.0.0.1 - - [07/May/2026 22:40:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-05-07 22:40:59,105 INFO: 127.0.0.1 - - [07/May/2026 22:40:59] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+2026-05-07 22:40:59,195 INFO: 127.0.0.1 - - [07/May/2026 22:40:59] "GET /api/check-auth HTTP/1.1" 200 -
+2026-05-07 22:40:59,939 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
+2026-05-07 22:40:59,941 INFO: 127.0.0.1 - - [07/May/2026 22:40:59] "GET /api/rates HTTP/1.1" 200 -
+2026-05-07 22:41:00,885 INFO: 127.0.0.1 - - [07/May/2026 22:41:00] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-05-07 22:41:00,921 INFO: 127.0.0.1 - - [07/May/2026 22:41:00] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-05-07 22:42:10,744 INFO:  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\auth.py', reloading
+2026-05-07 22:42:10,827 INFO:  * Restarting with stat
+2026-05-07 22:42:11,553 WARNING:  * Debugger is active!
+2026-05-07 22:42:11,562 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:42:56,813 INFO:  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\auth.py', reloading
+2026-05-07 22:42:56,881 INFO:  * Restarting with stat
+2026-05-07 22:42:57,551 WARNING:  * Debugger is active!
+2026-05-07 22:42:57,559 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:43:10,655 INFO:  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\auth.py', reloading
+2026-05-07 22:43:10,720 INFO:  * Restarting with stat
+2026-05-07 22:43:11,374 WARNING:  * Debugger is active!
+2026-05-07 22:43:11,382 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:43:54,647 INFO:  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\auth.py', reloading
+2026-05-07 22:43:54,738 INFO:  * Restarting with stat
+2026-05-07 22:43:55,486 WARNING:  * Debugger is active!
+2026-05-07 22:43:55,494 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:44:48,781 INFO:  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\auth.py', reloading
+2026-05-07 22:44:48,841 INFO:  * Restarting with stat
+2026-05-07 22:44:49,580 WARNING:  * Debugger is active!
+2026-05-07 22:44:49,590 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:45:13,736 INFO:  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\auth.py', reloading
+2026-05-07 22:45:13,798 INFO:  * Restarting with stat
+2026-05-07 22:45:14,460 WARNING:  * Debugger is active!
+2026-05-07 22:45:14,468 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:45:32,582 INFO:  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\auth.py', reloading
+2026-05-07 22:45:32,651 INFO:  * Restarting with stat
+2026-05-07 22:45:33,370 WARNING:  * Debugger is active!
+2026-05-07 22:45:33,378 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:45:37,418 INFO:  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\auth.py', reloading
+2026-05-07 22:45:37,478 INFO:  * Restarting with stat
+2026-05-07 22:45:38,115 WARNING:  * Debugger is active!
+2026-05-07 22:45:38,123 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:45:40,734 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-07 22:45:40,734 INFO: [33mPress CTRL+C to quit[0m
+2026-05-07 22:45:40,735 INFO:  * Restarting with stat
+2026-05-07 22:45:41,396 WARNING:  * Debugger is active!
+2026-05-07 22:45:41,405 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:45:49,680 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
+2026-05-07 22:45:49,686 INFO: 127.0.0.1 - - [07/May/2026 22:45:49] "GET / HTTP/1.1" 200 -
+2026-05-07 22:45:49,962 INFO: 127.0.0.1 - - [07/May/2026 22:45:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-05-07 22:45:49,977 INFO: 127.0.0.1 - - [07/May/2026 22:45:49] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+2026-05-07 22:45:49,990 INFO: 127.0.0.1 - - [07/May/2026 22:45:49] "GET /api/check-auth HTTP/1.1" 200 -
+2026-05-07 22:45:50,726 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
+2026-05-07 22:45:50,728 INFO: 127.0.0.1 - - [07/May/2026 22:45:50] "GET /api/rates HTTP/1.1" 200 -
+2026-05-07 22:45:53,022 INFO: 127.0.0.1 - - [07/May/2026 22:45:53] "[33mGET /logout HTTP/1.1[0m" 404 -
+2026-05-07 22:45:58,505 INFO:  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\auth.py', reloading
+2026-05-07 22:45:58,567 INFO:  * Restarting with stat
+2026-05-07 22:45:59,200 WARNING:  * Debugger is active!
+2026-05-07 22:45:59,208 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:48:25,256 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
+2026-05-07 22:48:25,262 INFO: 127.0.0.1 - - [07/May/2026 22:48:25] "GET / HTTP/1.1" 200 -
+2026-05-07 22:48:25,557 INFO: 127.0.0.1 - - [07/May/2026 22:48:25] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+2026-05-07 22:48:25,562 INFO: 127.0.0.1 - - [07/May/2026 22:48:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-05-07 22:48:25,642 INFO: 127.0.0.1 - - [07/May/2026 22:48:25] "GET /api/check-auth HTTP/1.1" 200 -
+2026-05-07 22:48:26,375 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
+2026-05-07 22:48:26,377 INFO: 127.0.0.1 - - [07/May/2026 22:48:26] "GET /api/rates HTTP/1.1" 200 -
+2026-05-07 22:48:27,338 INFO: 127.0.0.1 - - [07/May/2026 22:48:27] "[33mGET /logout HTTP/1.1[0m" 404 -
+2026-05-07 22:48:39,784 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
+2026-05-07 22:48:39,789 INFO: 127.0.0.1 - - [07/May/2026 22:48:39] "GET / HTTP/1.1" 200 -
+2026-05-07 22:48:39,820 INFO: 127.0.0.1 - - [07/May/2026 22:48:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-05-07 22:48:39,823 INFO: 127.0.0.1 - - [07/May/2026 22:48:39] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+2026-05-07 22:48:39,835 INFO: 127.0.0.1 - - [07/May/2026 22:48:39] "GET /api/check-auth HTTP/1.1" 200 -
+2026-05-07 22:48:40,632 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
+2026-05-07 22:48:40,634 INFO: 127.0.0.1 - - [07/May/2026 22:48:40] "GET /api/rates HTTP/1.1" 200 -
+2026-05-07 22:48:47,596 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-07 22:48:47,596 INFO: [33mPress CTRL+C to quit[0m
+2026-05-07 22:48:47,598 INFO:  * Restarting with stat
+2026-05-07 22:48:48,265 WARNING:  * Debugger is active!
+2026-05-07 22:48:48,273 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:48:50,959 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
+2026-05-07 22:48:50,964 INFO: 127.0.0.1 - - [07/May/2026 22:48:50] "GET / HTTP/1.1" 200 -
+2026-05-07 22:48:51,229 INFO: 127.0.0.1 - - [07/May/2026 22:48:51] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+2026-05-07 22:48:51,242 INFO: 127.0.0.1 - - [07/May/2026 22:48:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-05-07 22:48:51,259 INFO: 127.0.0.1 - - [07/May/2026 22:48:51] "GET /api/check-auth HTTP/1.1" 200 -
+2026-05-07 22:48:51,812 INFO: 127.0.0.1 - - [07/May/2026 22:48:51] "[33mGET /logout HTTP/1.1[0m" 404 -
+2026-05-07 22:48:52,008 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
+2026-05-07 22:48:52,010 INFO: 127.0.0.1 - - [07/May/2026 22:48:52] "GET /api/rates HTTP/1.1" 200 -
+2026-05-07 22:50:11,203 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-07 22:50:11,203 INFO: [33mPress CTRL+C to quit[0m
+2026-05-07 22:50:11,205 INFO:  * Restarting with stat
+2026-05-07 22:50:11,876 WARNING:  * Debugger is active!
+2026-05-07 22:50:11,887 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:50:21,100 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
+2026-05-07 22:50:21,105 INFO: 127.0.0.1 - - [07/May/2026 22:50:21] "GET / HTTP/1.1" 200 -
+2026-05-07 22:50:21,409 INFO: 127.0.0.1 - - [07/May/2026 22:50:21] "GET /static/main.js HTTP/1.1" 200 -
+2026-05-07 22:50:21,416 INFO: 127.0.0.1 - - [07/May/2026 22:50:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-05-07 22:50:21,495 INFO: 127.0.0.1 - - [07/May/2026 22:50:21] "GET /api/check-auth HTTP/1.1" 200 -
+2026-05-07 22:50:22,238 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
+2026-05-07 22:50:22,239 INFO: 127.0.0.1 - - [07/May/2026 22:50:22] "GET /api/rates HTTP/1.1" 200 -
+2026-05-07 22:50:23,066 INFO: 127.0.0.1 - - [07/May/2026 22:50:23] "[33mGET /logout HTTP/1.1[0m" 404 -
+2026-05-07 22:53:24,971 INFO:  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\auth.py', reloading
+2026-05-07 22:53:25,039 INFO:  * Restarting with stat
+2026-05-07 22:53:25,737 WARNING:  * Debugger is active!
+2026-05-07 22:53:25,745 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:53:28,156 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-07 22:53:28,156 INFO: [33mPress CTRL+C to quit[0m
+2026-05-07 22:53:28,158 INFO:  * Restarting with stat
+2026-05-07 22:53:29,458 WARNING:  * Debugger is active!
+2026-05-07 22:53:29,468 INFO:  * Debugger PIN: 142-472-412
+2026-05-07 22:53:32,312 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
+2026-05-07 22:53:32,318 INFO: 127.0.0.1 - - [07/May/2026 22:53:32] "GET / HTTP/1.1" 200 -
+2026-05-07 22:53:32,587 INFO: 127.0.0.1 - - [07/May/2026 22:53:32] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+2026-05-07 22:53:32,607 INFO: 127.0.0.1 - - [07/May/2026 22:53:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-05-07 22:53:32,686 INFO: 127.0.0.1 - - [07/May/2026 22:53:32] "GET /api/check-auth HTTP/1.1" 200 -
+2026-05-07 22:53:33,613 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
+2026-05-07 22:53:33,614 INFO: 127.0.0.1 - - [07/May/2026 22:53:33] "GET /api/rates HTTP/1.1" 200 -
+2026-05-07 22:53:36,396 INFO: 127.0.0.1 - - [07/May/2026 22:53:36] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-05-07 22:53:36,405 INFO: 127.0.0.1 - - [07/May/2026 22:53:36] "GET /login HTTP/1.1" 200 -
+2026-05-07 22:53:36,440 INFO: 127.0.0.1 - - [07/May/2026 22:53:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-05-07 22:53:36,442 INFO: 127.0.0.1 - - [07/May/2026 22:53:36] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+2026-05-07 22:53:42,329 INFO: 127.0.0.1 - - [07/May/2026 22:53:42] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-05-07 22:53:49,520 INFO: 127.0.0.1 - - [07/May/2026 22:53:49] "POST /login HTTP/1.1" 200 -
+2026-05-07 22:53:50,491 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
+2026-05-07 22:53:50,493 INFO: 127.0.0.1 - - [07/May/2026 22:53:50] "GET / HTTP/1.1" 200 -
+2026-05-07 22:53:50,520 INFO: 127.0.0.1 - - [07/May/2026 22:53:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2026-05-07 22:53:50,530 INFO: 127.0.0.1 - - [07/May/2026 22:53:50] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+2026-05-07 22:53:50,542 INFO: 127.0.0.1 - - [07/May/2026 22:53:50] "GET /api/check-auth HTTP/1.1" 200 -
+2026-05-07 22:53:51,593 ERROR: API Error: {'code': 103, 'type': 'invalid_api_function', 'info': 'This API Function does not exist.'}
+2026-05-07 22:53:51,594 INFO: 127.0.0.1 - - [07/May/2026 22:53:51] "GET /api/rates HTTP/1.1" 200 -
