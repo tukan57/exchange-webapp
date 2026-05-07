@@ -1,13 +1,15 @@
-class StorageService:
-    FILE_PATH = "data/settings.json"
+import logging
+from config import Config
 
-    def save_settings(self, settings_dict):
-        with open(self.FILE_PATH, 'w', encoding='utf-8') as f:
-            json.dump(settings_dict, f, indent=4)
+class LoggingService:
+    @staticmethod
+    def setup_logging():
+        logging.basicConfig(
+            filename=Config.LOG_FILE,
+            level=logging.INFO,
+            format='%(asctime)s %(levelname)s: %(message)s'
+        )
 
-    def load_settings(self):
-        try:
-            with open(self.FILE_PATH, 'r', encoding='utf-8') as f:
-                return json.load(f)
-        except FileNotFoundError:
-            return {"baseCurrency": "EUR", "selectedCurrencies": ["CZK", "USD"]}
+    @staticmethod
+    def log_error(message):
+        logging.error(message)
