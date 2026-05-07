@@ -15,3 +15,10 @@ class AnalyticsService:
                   for date_data in time_series_data.values() 
                   if currency_code in date_data]
         return sum(values) / len(values) if values else 0
+    
+    def get_min_max(rates):
+        if not rates: return None
+        return {
+            "strongest": max(rates.items(), key=lambda x: x[1]),
+            "weakest": min(rates.items(), key=lambda x: x[1])
+        }
