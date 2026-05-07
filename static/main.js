@@ -46,7 +46,7 @@ function initLogin() {
     loginForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         
-        const username = document.getElementById('username').value; // Přidáno
+        const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
         const errorEl = document.getElementById('loginError');
 
@@ -54,21 +54,24 @@ function initLogin() {
             const response = await fetch('/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                // Posíláme uživatelské jméno i heslo
                 body: `username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`
             });
 
-            if (response.redirected) {
-                window.location.href = response.url;
+            const result = await response.json();
+
+            if (response.ok && result.success) {
+                // Přihlášení bylo úspěšné, jdeme na hlavní stránku
+                errorEl.innerText = "Vítej, " + username + "!";
+                window.location.href = '/'; 
             } else {
-                errorEl.innerText = "Nesprávné jméno nebo heslo.";
+                errorEl.innerText = result.message || "Nesprávné jméno nebo heslo.";
             }
         } catch (error) {
+            console.error("Login error:", error);
             errorEl.innerText = "Chyba při komunikaci se serverem.";
         }
     });
 }
-
 // Získání reálných dat z vašeho ExchangeService (přes Flask)
 async function fetchRates() {
     try {
