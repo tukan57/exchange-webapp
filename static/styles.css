@@ -1,3 +1,4 @@
+/* --- Sjednocené proměnné (Moderní styl) --- */
 :root {
     --primary-color: #4361ee;
     --secondary-color: #3f37c9;
@@ -11,6 +12,7 @@
     --danger: #f72585;
 }
 
+/* --- Globální resety --- */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,12 +20,37 @@
 }
 
 body {
-    font-family: 'Inter', -apple-system, sans-serif;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-main);
-    overflow: hidden;
+    line-height: 1.6;
 }
 
+/* --- Login / Auth stránka --- */
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--white); /* Přidáno pro lepší kontrast u loginu */
+}
+
+.login-container {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-container h1 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+/* --- Hlavní SPA Layout (#app) --- */
 #app {
     display: flex;
     height: 100vh;
@@ -62,10 +89,15 @@ nav {
     cursor: pointer;
     border-radius: 8px;
     margin-bottom: 0.5rem;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
 }
 
 .nav-link i { margin-right: 12px; }
+
+.nav-link:hover {
+    background: var(--bg-color);
+    color: var(--primary-color);
+}
 
 .nav-link.active {
     background: var(--primary-color);
@@ -81,9 +113,15 @@ nav {
     cursor: pointer;
     width: 100%;
     color: var(--danger);
+    transition: 0.2s;
 }
 
-/* Content Area */
+.btn-logout:hover {
+    background: var(--danger);
+    color: white;
+}
+
+/* --- Obsahová část --- */
 .content {
     flex-grow: 1;
     overflow-y: auto;
@@ -97,9 +135,7 @@ nav {
     margin-bottom: 2rem;
 }
 
-.top-bar h1 { font-size: 1.75rem; }
-
-/* Dashboard UI */
+/* Dashboard Statistiky */
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -112,22 +148,35 @@ nav {
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    border: 1px solid var(--border-color);
 }
 
-.stat-label { color: var(--text-muted); font-size: 0.9rem; }
-.stat-value { font-size: 1.5rem; font-weight: 700; margin-top: 0.5rem; color: var(--primary-color); }
+.stat-label { 
+    color: var(--text-muted); 
+    font-size: 0.9rem; 
+    display: block;
+}
 
+.stat-value { 
+    font-size: 1.7rem; 
+    font-weight: 700; 
+    margin-top: 0.5rem; 
+    color: var(--primary-color); 
+}
+
+/* Karty */
 .card {
     background: var(--white);
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    border: 1px solid var(--border-color);
 }
 
-.chart-card { min-height: 300px; }
+.chart-card { min-height: 350px; }
 
-/* Table */
+/* Tabulky */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -139,7 +188,7 @@ th {
     padding: 1rem;
     color: var(--text-muted);
     font-weight: 500;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
 }
 
 td {
@@ -147,24 +196,41 @@ td {
     border-bottom: 1px solid var(--border-color);
 }
 
-/* Settings Form */
-.form-group { margin-bottom: 1.5rem; }
-.form-group label { display: block; margin-bottom: 0.5rem; font-weight: 500; }
-.form-control {
+/* --- Formuláře a tlačítka --- */
+.form-group { 
+    margin-bottom: 1.2rem; 
+}
+
+.form-group label { 
+    display: block; 
+    margin-bottom: 0.5rem; 
+    font-weight: 500; 
+}
+
+input, select, .form-control {
     width: 100%;
-    padding: 0.75rem;
+    padding: 0.8rem;
     border: 1px solid var(--border-color);
     border-radius: 8px;
     font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+    border-color: var(--primary-color);
 }
 
 .checkbox-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 15px;
+    background: var(--bg-color);
+    padding: 1rem;
+    border-radius: 8px;
 }
 
-.btn-save {
+.btn-primary, .btn-save {
     background: var(--primary-color);
     color: white;
     border: none;
@@ -172,4 +238,5 @@ td {
     border-radius: 8px;
     cursor: pointer;
     font-weight: 600;
-}
+    width: 100%;
+    transition
