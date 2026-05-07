@@ -1,6 +1,7 @@
 from flask import Flask
 from config import Config
 from routes.auth import auth_bp
+from routes.api import api_bp
 from routes.views import views_bp
 from services.logging_service import LoggingService
 
@@ -12,6 +13,7 @@ def create_app():
     
     app.register_blueprint(auth_bp)
     app.register_blueprint(views_bp)
+    app.register_blueprint(api_bp)
     
     return app
 
