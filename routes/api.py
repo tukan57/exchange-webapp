@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, session
+from flask import Blueprint, jsonify, request, session
 from services.exchange_service import ExchangeService
 from services.storage_service import StorageService
 
@@ -20,3 +20,20 @@ def get_rates():
     data = exchange_svc.get_latest_rates(settings['baseCurrency'], settings['selectedCurrencies'])
     
     return jsonify(data)
+
+@api_bp.route('/api/settings', methods=['POST'])
+def update_settings():
+    if 'user_id' not in session:
+        return jsonify({"error": "Unauthorized"}), 401
+    
+    new_data = request.get_json() 
+    
+    if not new_data:
+        return jsonify({"error": "Žádná data"}), 400
+
+    # Uložení přes tvou StorageService
+    current_settings = StorageService.load_settings()
+    current_settings.update(new_data)
+    StorageService.save_settings(current_settings)
+    
+    return jsonify({"success": True})

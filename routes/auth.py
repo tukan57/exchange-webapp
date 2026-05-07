@@ -11,7 +11,10 @@ def login():
 
         if username == Config.USERNAME and password == Config.PASSWORD:
             session['user_id'] = username
-            return jsonify({"success": True, "message": "Přihlášení úspěšné"}), 200
+            return jsonify({
+                "success": True, 
+                "redirect": url_for('views.dashboard')
+            }), 200
         
         return jsonify({"success": False, "message": "Neplatné údaje"}), 401
         
