@@ -499,3 +499,108 @@
 2026-05-08 00:41:55,432 INFO: 127.0.0.1 - - [08/May/2026 00:41:55] "[31m[1mPOST /settings HTTP/1.1[0m" 405 -
 2026-05-08 00:41:55,437 INFO: 127.0.0.1 - - [08/May/2026 00:41:55] "POST /api/settings HTTP/1.1" 200 -
 2026-05-08 00:41:56,814 INFO: 127.0.0.1 - - [08/May/2026 00:41:56] "GET /api/rates HTTP/1.1" 200 -
+2026-05-08 12:53:52,464 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-08 12:53:52,465 INFO: [33mPress CTRL+C to quit[0m
+2026-05-08 12:53:52,474 INFO:  * Restarting with stat
+2026-05-08 12:53:53,094 WARNING:  * Debugger is active!
+2026-05-08 12:53:53,103 INFO:  * Debugger PIN: 142-472-412
+2026-05-08 12:53:55,469 INFO: 127.0.0.1 - - [08/May/2026 12:53:55] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-08 12:53:55,476 INFO: 127.0.0.1 - - [08/May/2026 12:53:55] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2026-05-08 12:53:56,496 INFO: 127.0.0.1 - - [08/May/2026 12:53:56] "[32mGET / HTTP/1.1[0m" 302 -
+2026-05-08 12:53:56,506 INFO: 127.0.0.1 - - [08/May/2026 12:53:56] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2026-05-08 12:53:56,629 INFO: 127.0.0.1 - - [08/May/2026 12:53:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-05-08 12:54:20,272 INFO:  * Detected change in 'f:\\�kola\\exchange-webapp\\routes\\auth.py', reloading
+2026-05-08 12:54:20,340 INFO:  * Restarting with stat
+2026-05-08 12:54:21,014 WARNING:  * Debugger is active!
+2026-05-08 12:54:21,022 INFO:  * Debugger PIN: 142-472-412
+2026-05-08 12:54:25,214 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-08 12:54:25,214 INFO: [33mPress CTRL+C to quit[0m
+2026-05-08 12:54:25,216 INFO:  * Restarting with stat
+2026-05-08 12:54:25,853 WARNING:  * Debugger is active!
+2026-05-08 12:54:25,862 INFO:  * Debugger PIN: 142-472-412
+2026-05-08 12:54:27,268 INFO: 127.0.0.1 - - [08/May/2026 12:54:27] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2026-05-08 12:54:27,555 INFO: 127.0.0.1 - - [08/May/2026 12:54:27] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-05-08 12:54:27,560 INFO: 127.0.0.1 - - [08/May/2026 12:54:27] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-05-08 12:54:27,625 INFO: 127.0.0.1 - - [08/May/2026 12:54:27] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=u24NzTimggvzHtZPGqLm HTTP/1.1" 200 -
+2026-05-08 12:54:27,639 INFO: 127.0.0.1 - - [08/May/2026 12:54:27] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-05-08 12:56:06,450 INFO:  * Detected change in 'f:\\�kola\\exchange-webapp\\services\\storage_service.py', reloading
+2026-05-08 12:56:06,511 INFO:  * Restarting with stat
+2026-05-08 12:56:07,191 WARNING:  * Debugger is active!
+2026-05-08 12:56:07,203 INFO:  * Debugger PIN: 142-472-412
+2026-05-08 12:56:40,408 INFO:  * Detected change in 'f:\\�kola\\exchange-webapp\\services\\storage_service.py', reloading
+2026-05-08 12:56:40,469 INFO:  * Restarting with stat
+2026-05-08 12:56:41,137 WARNING:  * Debugger is active!
+2026-05-08 12:56:41,146 INFO:  * Debugger PIN: 142-472-412
+2026-05-08 12:56:50,955 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-08 12:56:50,955 INFO: [33mPress CTRL+C to quit[0m
+2026-05-08 12:56:50,957 INFO:  * Restarting with stat
+2026-05-08 12:56:51,603 WARNING:  * Debugger is active!
+2026-05-08 12:56:51,612 INFO:  * Debugger PIN: 142-472-412
+[2026-05-08 12:57:00] [WARNING] Neúspěšný pokus o přihlášení jako: None
+2026-05-08 12:57:00,672 INFO: 127.0.0.1 - - [08/May/2026 12:57:00] "[31m[1mGET /login HTTP/1.1[0m" 401 -
+[2026-05-08 12:57:03] [WARNING] Neúspěšný pokus o přihlášení jako: None
+2026-05-08 12:57:03,033 INFO: 127.0.0.1 - - [08/May/2026 12:57:03] "[31m[1mGET /login HTTP/1.1[0m" 401 -
+[2026-05-08 12:57:03] [WARNING] Neúspěšný pokus o přihlášení jako: None
+2026-05-08 12:57:03,675 INFO: 127.0.0.1 - - [08/May/2026 12:57:03] "[31m[1mGET /login HTTP/1.1[0m" 401 -
+2026-05-08 12:58:12,122 INFO:  * Detected change in 'f:\\�kola\\exchange-webapp\\services\\logging_service.py', reloading
+2026-05-08 12:58:12,181 INFO:  * Restarting with stat
+[2026-05-08 12:58:12] [WARNING]  * Debugger is active!
+[2026-05-08 12:58:12] [INFO]  * Debugger PIN: 142-472-412
+[2026-05-08 12:59:11] [INFO]  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\auth.py', reloading
+2026-05-08 12:59:11,223 INFO:  * Restarting with stat
+[2026-05-08 12:59:11] [WARNING]  * Debugger is active!
+[2026-05-08 12:59:11] [INFO]  * Debugger PIN: 142-472-412
+[2026-05-08 12:59:30] [INFO]  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\auth.py', reloading
+2026-05-08 12:59:30,093 INFO:  * Restarting with stat
+[2026-05-08 12:59:30] [WARNING]  * Debugger is active!
+[2026-05-08 12:59:30] [INFO]  * Debugger PIN: 142-472-412
+[2026-05-08 12:59:39] [INFO]  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\auth.py', reloading
+2026-05-08 12:59:39,864 INFO:  * Restarting with stat
+[2026-05-08 12:59:40] [WARNING]  * Debugger is active!
+[2026-05-08 12:59:40] [INFO]  * Debugger PIN: 142-472-412
+[2026-05-08 12:59:44] [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2026-05-08 12:59:44] [INFO] [33mPress CTRL+C to quit[0m
+[2026-05-08 12:59:44] [INFO]  * Restarting with stat
+[2026-05-08 12:59:44] [WARNING]  * Debugger is active!
+[2026-05-08 12:59:44] [INFO]  * Debugger PIN: 142-472-412
+[2026-05-08 12:59:47] [WARNING] Neúspěšný pokus o přihlášení jako: None
+[2026-05-08 12:59:47] [INFO] 127.0.0.1 - - [08/May/2026 12:59:47] "[31m[1mGET /login HTTP/1.1[0m" 401 -
+[2026-05-08 12:59:48] [WARNING] Neúspěšný pokus o přihlášení jako: None
+[2026-05-08 12:59:48] [INFO] 127.0.0.1 - - [08/May/2026 12:59:48] "[31m[1mGET /login HTTP/1.1[0m" 401 -
+[2026-05-08 13:01:02] [INFO]  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\auth.py', reloading
+[2026-05-08 13:01:02] [INFO]  * Restarting with stat
+[2026-05-08 13:01:02] [WARNING]  * Debugger is active!
+[2026-05-08 13:01:02] [INFO]  * Debugger PIN: 142-472-412
+[2026-05-08 13:01:05] [INFO]  * Detected change in 'f:\\Škola\\exchange-webapp\\routes\\auth.py', reloading
+[2026-05-08 13:01:06] [INFO]  * Restarting with stat
+[2026-05-08 13:01:06] [WARNING]  * Debugger is active!
+[2026-05-08 13:01:06] [INFO]  * Debugger PIN: 142-472-412
+[2026-05-08 13:01:09] [INFO] 127.0.0.1 - - [08/May/2026 13:01:09] "GET /login HTTP/1.1" 200 -
+[2026-05-08 13:01:10] [INFO] 127.0.0.1 - - [08/May/2026 13:01:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+[2026-05-08 13:01:10] [INFO] 127.0.0.1 - - [08/May/2026 13:01:10] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+[2026-05-08 13:01:10] [INFO] 127.0.0.1 - - [08/May/2026 13:01:10] "[31m[1mGET /api/rates HTTP/1.1[0m" 401 -
+[2026-05-08 13:01:16] [WARNING] Neúspěšný pokus o přihlášení: asgasg
+[2026-05-08 13:01:16] [INFO] 127.0.0.1 - - [08/May/2026 13:01:16] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+[2026-05-08 13:01:39] [INFO] Uživatel admin se přihlásil.
+[2026-05-08 13:01:39] [INFO] 127.0.0.1 - - [08/May/2026 13:01:39] "POST /login HTTP/1.1" 200 -
+[2026-05-08 13:01:39] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 13:01:39] [INFO] 127.0.0.1 - - [08/May/2026 13:01:39] "GET / HTTP/1.1" 200 -
+[2026-05-08 13:01:39] [INFO] 127.0.0.1 - - [08/May/2026 13:01:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+[2026-05-08 13:01:39] [INFO] 127.0.0.1 - - [08/May/2026 13:01:39] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+[2026-05-08 13:01:39] [INFO] 127.0.0.1 - - [08/May/2026 13:01:39] "GET /api/check-auth HTTP/1.1" 200 -
+[2026-05-08 13:01:39] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 13:01:39] [INFO] 127.0.0.1 - - [08/May/2026 13:01:39] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 13:01:39] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 13:01:39] [INFO] 127.0.0.1 - - [08/May/2026 13:01:39] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 13:02:23] [INFO] 127.0.0.1 - - [08/May/2026 13:02:23] "[31m[1mPOST /settings HTTP/1.1[0m" 405 -
+[2026-05-08 13:02:23] [INFO] 127.0.0.1 - - [08/May/2026 13:02:23] "POST /api/settings HTTP/1.1" 200 -
+[2026-05-08 13:02:24] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 13:02:24] [INFO] 127.0.0.1 - - [08/May/2026 13:02:24] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 13:04:49] [INFO]  * Detected change in 'f:\\Škola\\exchange-webapp\\services\\storage_service.py', reloading
+[2026-05-08 13:04:50] [INFO]  * Restarting with stat
+[2026-05-08 13:04:50] [WARNING]  * Debugger is active!
+[2026-05-08 13:04:50] [INFO]  * Debugger PIN: 142-472-412

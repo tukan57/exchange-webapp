@@ -22,3 +22,4 @@ class StorageService:
         os.makedirs(os.path.dirname(Config.SETTINGS_FILE), exist_ok=True)
         with open(Config.SETTINGS_FILE, 'w', encoding='utf-8') as f:
             json.dump(settings, f, indent=4)
+    
