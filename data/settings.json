@@ -1,11 +1,6 @@
 {
     "baseCurrency": "EUR",
     "selectedCurrencies": [
-        "CZK",
-        "USD",
-        "GBP",
-        "PLN",
-        "HUF",
-        "CHF"
+        "CZK"
     ]
 }
