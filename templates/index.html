@@ -101,6 +101,19 @@
                             </div>
                         </div>
 
+                        <div class="form-group">
+                            <label id="lbl-date-mode">Režim dat</label>
+                            <select id="dateMode" onchange="toggleDatePicker()">
+                                <option value="latest" selected>Aktuální kurzy</option>
+                                <option value="historical">Historické kurzy</option>
+                            </select>
+                        </div>
+
+                        <div id="datePickerContainer" class="form-group" style="display: none;">
+                            <label id="lbl-select-date">Vyberte datum</label>
+                            <input type="date" id="historicalDate" max="">
+                        </div>
+
                         <button type="submit" class="btn-save">
                             <span id="btn-save-text">Uložit preference</span>
                         </button>

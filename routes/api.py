@@ -1,5 +1,6 @@
 from flask import Blueprint, jsonify, request, session
 from services.exchange_service import ExchangeService
+from services.logging_service import LoggingService
 from services.storage_service import StorageService
 
 api_bp = Blueprint('api', __name__)
@@ -12,13 +13,20 @@ def check_auth():
 
 @api_bp.route('/api/rates')
 def get_rates():
-    if 'user_id' not in session:
-        return jsonify({"error": "Unauthorized"}), 401
-        
-    settings = StorageService.load_settings()
+    setts = StorageService.load_settings()
     exchange_svc = ExchangeService()
-    data = exchange_svc.get_latest_rates(settings['baseCurrency'], settings['selectedCurrencies'])
     
+    mode = setts.get('dateMode', 'latest')
+    date = setts.get('historicalDate')
+    base = setts.get('baseCurrency', 'EUR')
+    selected = setts.get('selectedCurrencies', [])
+
+    if mode == 'historical' and date:
+        data = exchange_svc.get_historical_rates(date, base, selected)
+        LoggingService.log_event("info", f"Načtena historická data pro {date}")
+    else:
+        data = exchange_svc.get_latest_rates(base, selected)
+        
     return jsonify(data)
 
 @api_bp.route('/api/settings', methods=['POST'])

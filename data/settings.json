@@ -1,8 +1,14 @@
 {
     "baseCurrency": "EUR",
     "selectedCurrencies": [
-        "AUD",
+        "AED",
+        "BHD",
         "CZK",
+        "EUR",
+        "PLN",
+        "RUB",
         "USD"
-    ]
+    ],
+    "dateMode": "latest",
+    "historicalDate": "2025-05-04"
 }

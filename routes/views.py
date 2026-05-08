@@ -15,16 +15,8 @@ def dashboard():
     
     all_currencies = exchange_svc.get_all_currencies()
     
-    data = exchange_svc.get_latest_rates(
-        setts.get('baseCurrency', 'EUR'), 
-        setts.get('selectedCurrencies', [])
-    )
-    
-    rates = data.get('rates', {}) if data else {}
-    stats = AnalyticsService.get_min_max(rates)
-    
     return render_template('index.html', 
-                           rates=rates, 
-                           stats=stats, 
+                           rates={},
+                           stats={}, 
                            settings=setts, 
                            all_currencies=all_currencies)

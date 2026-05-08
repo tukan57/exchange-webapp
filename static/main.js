@@ -1,7 +1,7 @@
-// --- Globální stav ---
 let myChart = null;
 let currentLang = localStorage.getItem('lang') || 'cs';
-let currentBase = '---'; // Pomocná proměnná pro uchování aktuální základní měny
+let currentBase = '---';
+let cachedRates = null;
 
 const translations = {
     cs: {
@@ -57,9 +57,11 @@ function switchLanguage(lang) {
     currentLang = lang;
     localStorage.setItem('lang', lang);
     applyTranslations();
-    // Pokud máme data, překreslíme graf s novým popiskem (label v legendě)
-    if (myChart) {
-        loadDashboardData(); 
+    
+    if (cachedRates) {
+        updateStats(cachedRates);
+        updateTable(cachedRates);
+        renderChart(cachedRates, currentBase);
     }
 }
 
@@ -79,14 +81,14 @@ function applyTranslations() {
     document.getElementById('nav-settings').innerHTML = `<i>⚙️</i> ${t.settings}`;
     document.querySelector('.btn-logout').innerText = t.logout;
 
-    // Statistiky a Tabulka
+
     document.getElementById('lbl-strongest').innerText = t.strongest;
     document.getElementById('lbl-weakest').innerText = t.weakest;
     document.getElementById('lbl-avg').innerText = t.avg;
     document.getElementById('th-curr').innerText = t.table_curr;
     document.getElementById('th-rate').innerText = t.table_rate;
     
-    // Nadpis grafu (oprava zobrazení base currency)
+    // Nadpis grafu
     const chartTitleH3 = document.querySelector('.chart-card h3');
     if (chartTitleH3) {
         chartTitleH3.innerHTML = `${t.chart_title}<span class="base-currency-tag">${currentBase}</span>)`;
@@ -109,12 +111,13 @@ async function loadDashboardData() {
         const data = await response.json();
 
         if (data && data.rates) {
-            currentBase = data.base; // Uložíme si pro překlady
+            cachedRates = data.rates;
+            currentBase = data.base;
+            
             updateStats(data.rates);
             updateTable(data.rates);
             renderChart(data.rates, data.base);
             
-            // Okamžitá aktualizace tagů v HTML
             document.querySelectorAll('.base-currency-tag').forEach(el => el.innerText = data.base);
         }
     } catch (err) {
@@ -131,9 +134,12 @@ function updateStats(rates) {
     const minVal = Math.min(...values);
     const avg = values.reduce((a, b) => a + b, 0) / values.length;
 
-    // Nejsilnější měna = nejnižší číslo (stojí nejméně jednotek základní měny)
-    document.getElementById('strongestCurrency').innerText = keys[values.indexOf(minVal)];
-    document.getElementById('weakestCurrency').innerText = keys[values.indexOf(maxVal)];
+    const strongestName = keys[values.indexOf(minVal)];
+    document.getElementById('strongestCurrency').innerText = `${strongestName} (${minVal.toFixed(4)})`;
+
+    const weakestName = keys[values.indexOf(maxVal)];
+    document.getElementById('weakestCurrency').innerText = `${weakestName} (${maxVal.toFixed(4)})`;
+    
     document.getElementById('avgRate').innerText = avg.toFixed(4);
 }
 
@@ -213,25 +219,32 @@ function setupSettingsForm() {
     if (!form) return;
 
     form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const base = document.getElementById('baseCurrencySelect').value;
-        const selected = Array.from(document.querySelectorAll('#symbolsGroup input:checked')).map(cb => cb.value);
+    e.preventDefault();
+    const base = document.getElementById('baseCurrencySelect').value;
+    const mode = document.getElementById('dateMode').value;
+    const date = document.getElementById('historicalDate').value;
+    const selected = Array.from(document.querySelectorAll('#symbolsGroup input:checked')).map(cb => cb.value);
 
-        try {
-            const response = await fetch('/api/settings', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ baseCurrency: base, selectedCurrencies: selected })
-            });
+    const payload = {
+        baseCurrency: base,
+        selectedCurrencies: selected,
+        dateMode: mode,
+        historicalDate: date
+    };
 
-            if (response.ok) {
-                await loadDashboardData();
-                showSection('dashboard');
-            }
-        } catch (error) {
-            console.error("Save failed:", error);
+    try {
+        const response = await fetch('/api/settings', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        });
+
+        if (response.ok) {
+            await loadDashboardData();
+            showSection('dashboard');
         }
-    });
+    } catch (error) { console.error("Save failed:", error); }
+});
 }
 
 function logout() { window.location.href = '/logout'; }
@@ -252,7 +265,6 @@ function initLogin() {
             });
 
             if (response.redirected) {
-                // Pokud jsi v auth.py použil Možnost A (return redirect)
                 window.location.href = response.url;
             } else {
                 const data = await response.json();
@@ -267,4 +279,12 @@ function initLogin() {
             alert("Chyba při komunikaci se serverem.");
         }
     });
+}
+
+function toggleDatePicker() {
+    const mode = document.getElementById('dateMode').value;
+    document.getElementById('datePickerContainer').style.display = (mode === 'historical') ? 'block' : 'none';
+    
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('historicalDate').setAttribute('max', today);
 }
