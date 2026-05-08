@@ -873,3 +873,113 @@
 [2026-05-08 14:18:55] [INFO] 127.0.0.1 - - [08/May/2026 14:18:55] "GET /api/rates HTTP/1.1" 200 -
 [2026-05-08 14:18:56] [INFO] Načítání aktuálních MOCK dat.
 [2026-05-08 14:18:56] [INFO] 127.0.0.1 - - [08/May/2026 14:18:56] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:19:14] [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2026-05-08 14:19:14] [INFO] [33mPress CTRL+C to quit[0m
+[2026-05-08 14:19:14] [INFO]  * Restarting with stat
+[2026-05-08 14:19:14] [WARNING]  * Debugger is active!
+[2026-05-08 14:19:14] [INFO]  * Debugger PIN: 142-472-412
+[2026-05-08 14:19:14] [INFO] Načten seznam měn z list.json.
+[2026-05-08 14:19:14] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:19:14] [INFO] 127.0.0.1 - - [08/May/2026 14:19:14] "GET / HTTP/1.1" 200 -
+[2026-05-08 14:19:15] [INFO] 127.0.0.1 - - [08/May/2026 14:19:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+[2026-05-08 14:19:15] [INFO] 127.0.0.1 - - [08/May/2026 14:19:15] "GET /static/main.js HTTP/1.1" 200 -
+[2026-05-08 14:19:15] [INFO] 127.0.0.1 - - [08/May/2026 14:19:15] "GET /api/check-auth HTTP/1.1" 200 -
+[2026-05-08 14:19:15] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:19:15] [INFO] 127.0.0.1 - - [08/May/2026 14:19:15] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:19:15] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:19:15] [INFO] 127.0.0.1 - - [08/May/2026 14:19:15] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:20:05] [INFO] Načten seznam měn z list.json.
+[2026-05-08 14:20:05] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:20:05] [INFO] 127.0.0.1 - - [08/May/2026 14:20:05] "GET / HTTP/1.1" 200 -
+[2026-05-08 14:20:05] [INFO] 127.0.0.1 - - [08/May/2026 14:20:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+[2026-05-08 14:20:05] [INFO] 127.0.0.1 - - [08/May/2026 14:20:05] "GET /static/main.js HTTP/1.1" 200 -
+[2026-05-08 14:20:05] [INFO] 127.0.0.1 - - [08/May/2026 14:20:05] "GET /api/check-auth HTTP/1.1" 200 -
+[2026-05-08 14:20:05] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:20:05] [INFO] 127.0.0.1 - - [08/May/2026 14:20:05] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:20:05] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:20:05] [INFO] 127.0.0.1 - - [08/May/2026 14:20:05] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:20:57] [INFO] Načten seznam měn z list.json.
+[2026-05-08 14:20:57] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:20:57] [INFO] 127.0.0.1 - - [08/May/2026 14:20:57] "GET / HTTP/1.1" 200 -
+[2026-05-08 14:20:57] [INFO] 127.0.0.1 - - [08/May/2026 14:20:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+[2026-05-08 14:20:57] [INFO] 127.0.0.1 - - [08/May/2026 14:20:57] "GET /static/main.js HTTP/1.1" 200 -
+[2026-05-08 14:20:57] [INFO] 127.0.0.1 - - [08/May/2026 14:20:57] "GET /api/check-auth HTTP/1.1" 200 -
+[2026-05-08 14:20:57] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:20:57] [INFO] 127.0.0.1 - - [08/May/2026 14:20:57] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:20:57] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:20:57] [INFO] 127.0.0.1 - - [08/May/2026 14:20:57] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:25:25] [INFO] Načten seznam měn z list.json.
+[2026-05-08 14:25:25] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:25:25] [INFO] 127.0.0.1 - - [08/May/2026 14:25:25] "GET / HTTP/1.1" 200 -
+[2026-05-08 14:25:25] [INFO] 127.0.0.1 - - [08/May/2026 14:25:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+[2026-05-08 14:25:25] [INFO] 127.0.0.1 - - [08/May/2026 14:25:25] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+[2026-05-08 14:25:25] [INFO] 127.0.0.1 - - [08/May/2026 14:25:25] "GET /api/check-auth HTTP/1.1" 200 -
+[2026-05-08 14:25:25] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:25:25] [INFO] 127.0.0.1 - - [08/May/2026 14:25:25] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:25:25] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:25:25] [INFO] 127.0.0.1 - - [08/May/2026 14:25:25] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:25:50] [INFO] 127.0.0.1 - - [08/May/2026 14:25:50] "[33mPOST /settings HTTP/1.1[0m" 404 -
+[2026-05-08 14:25:50] [INFO] 127.0.0.1 - - [08/May/2026 14:25:50] "POST /api/settings HTTP/1.1" 200 -
+[2026-05-08 14:25:51] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:25:51] [INFO] 127.0.0.1 - - [08/May/2026 14:25:51] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:26:14] [INFO] Načten seznam měn z list.json.
+[2026-05-08 14:26:14] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:26:14] [INFO] 127.0.0.1 - - [08/May/2026 14:26:14] "GET / HTTP/1.1" 200 -
+[2026-05-08 14:26:14] [INFO] 127.0.0.1 - - [08/May/2026 14:26:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+[2026-05-08 14:26:14] [INFO] 127.0.0.1 - - [08/May/2026 14:26:14] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+[2026-05-08 14:26:14] [INFO] 127.0.0.1 - - [08/May/2026 14:26:14] "GET /api/check-auth HTTP/1.1" 200 -
+[2026-05-08 14:26:14] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:26:14] [INFO] 127.0.0.1 - - [08/May/2026 14:26:14] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:26:14] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:26:14] [INFO] 127.0.0.1 - - [08/May/2026 14:26:14] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:26:35] [INFO] Načten seznam měn z list.json.
+[2026-05-08 14:26:35] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:26:35] [INFO] 127.0.0.1 - - [08/May/2026 14:26:35] "GET / HTTP/1.1" 200 -
+[2026-05-08 14:26:35] [INFO] 127.0.0.1 - - [08/May/2026 14:26:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+[2026-05-08 14:26:35] [INFO] 127.0.0.1 - - [08/May/2026 14:26:35] "GET /static/main.js HTTP/1.1" 200 -
+[2026-05-08 14:26:35] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:26:35] [INFO] 127.0.0.1 - - [08/May/2026 14:26:35] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:26:38] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:26:38] [INFO] 127.0.0.1 - - [08/May/2026 14:26:38] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:26:39] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:26:39] [INFO] 127.0.0.1 - - [08/May/2026 14:26:39] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:26:39] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:26:39] [INFO] 127.0.0.1 - - [08/May/2026 14:26:39] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:26:40] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:26:40] [INFO] 127.0.0.1 - - [08/May/2026 14:26:40] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:26:42] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:26:42] [INFO] 127.0.0.1 - - [08/May/2026 14:26:42] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:26:43] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:26:43] [INFO] 127.0.0.1 - - [08/May/2026 14:26:43] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:26:43] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:26:43] [INFO] 127.0.0.1 - - [08/May/2026 14:26:43] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:26:45] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:26:45] [INFO] 127.0.0.1 - - [08/May/2026 14:26:45] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:26:46] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:26:46] [INFO] 127.0.0.1 - - [08/May/2026 14:26:46] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:26:47] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:26:47] [INFO] 127.0.0.1 - - [08/May/2026 14:26:47] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:26:47] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:26:47] [INFO] 127.0.0.1 - - [08/May/2026 14:26:47] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:26:48] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:26:48] [INFO] 127.0.0.1 - - [08/May/2026 14:26:48] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:26:48] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:26:48] [INFO] 127.0.0.1 - - [08/May/2026 14:26:48] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:26:49] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:26:49] [INFO] 127.0.0.1 - - [08/May/2026 14:26:49] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:26:51] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:26:51] [INFO] 127.0.0.1 - - [08/May/2026 14:26:51] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:26:58] [INFO] 127.0.0.1 - - [08/May/2026 14:26:58] "POST /api/settings HTTP/1.1" 200 -
+[2026-05-08 14:26:58] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:26:58] [INFO] 127.0.0.1 - - [08/May/2026 14:26:58] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:27:01] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:27:01] [INFO] 127.0.0.1 - - [08/May/2026 14:27:01] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:27:02] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:27:02] [INFO] 127.0.0.1 - - [08/May/2026 14:27:02] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:27:02] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:27:02] [INFO] 127.0.0.1 - - [08/May/2026 14:27:02] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:27:03] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:27:03] [INFO] 127.0.0.1 - - [08/May/2026 14:27:03] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 14:27:03] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-08 14:27:03] [INFO] 127.0.0.1 - - [08/May/2026 14:27:03] "GET /api/rates HTTP/1.1" 200 -
