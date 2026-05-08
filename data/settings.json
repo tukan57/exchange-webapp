@@ -1,6 +1,8 @@
 {
     "baseCurrency": "EUR",
     "selectedCurrencies": [
-        "CZK"
+        "AUD",
+        "CZK",
+        "USD"
     ]
 }

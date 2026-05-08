@@ -32,7 +32,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: var(--white); /* Přidáno pro lepší kontrast u loginu */
+    background-color: var(--white);
 }
 
 .login-container {
@@ -114,6 +114,7 @@ nav {
     width: 100%;
     color: var(--danger);
     transition: 0.2s;
+    margin-top: auto;
 }
 
 .btn-logout:hover {
@@ -133,6 +134,40 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
+}
+
+/* --- Přepínač jazyků --- */
+.lang-switch {
+    display: flex;
+    gap: 5px;
+    background: var(--border-color);
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.btn-lang {
+    border: none;
+    background: transparent;
+    padding: 6px 12px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-lang:hover {
+    color: var(--text-main);
+}
+
+.btn-lang.active {
+    background: var(--white);
+    color: var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 /* Dashboard Statistiky */
@@ -221,13 +256,72 @@ input:focus, select:focus {
     border-color: var(--primary-color);
 }
 
-.checkbox-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 15px;
-    background: var(--bg-color);
-    padding: 1rem;
+/* --- Nastavení výběru měn --- */
+.currency-grid-container {
+    max-height: 350px;
+    overflow-y: auto;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
+    padding: 10px;
+    background: #fdfdfd;
+}
+
+/* Custom scrollbar pro container */
+.currency-grid-container::-webkit-scrollbar {
+    width: 6px;
+}
+.currency-grid-container::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 10px;
+}
+
+.symbols-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 8px;
+}
+
+.chip {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.chip:hover {
+    background: var(--bg-color);
+    border-color: var(--primary-color);
+}
+
+.chip input {
+    margin-right: 12px;
+    width: 18px;
+    height: 18px;
+    accent-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.chip .code {
+    font-weight: 700;
+    width: 45px;
+    color: var(--text-main);
+}
+
+.chip .full-name {
+    font-size: 0.85em;
+    color: var(--text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chip:has(input:checked) {
+    background: #f0f3ff;
+    border-color: var(--primary-color);
 }
 
 .btn-primary, .btn-save {
@@ -239,4 +333,10 @@ input:focus, select:focus {
     cursor: pointer;
     font-weight: 600;
     width: 100%;
-    transition
+    margin-top: 1rem;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover, .btn-save:hover {
+    background: var(--secondary-color);
+}

@@ -1,44 +1,52 @@
 import json
 import requests
+import os
 from config import Config
-from services.storage_service import StorageService
+from services.logging_service import LoggingService
 
 class ExchangeService:
+    def get_all_currencies(self):
+        """Načte seznam všech měn z list.json (mock) nebo z API"""
+        if Config.USE_MOCK_DATA:
+            try:
+                path = os.path.join('tests', 'samples', 'list.json')
+                with open(path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    LoggingService.log_event("info", "Načten seznam měn z list.json.")
+                    return data.get('currencies', {})
+            except Exception as e:
+                LoggingService.log_event("error", f"Chyba při čtení list.json: {e}")
+                return {"CZK": "Czech Koruna", "EUR": "Euro", "USD": "US Dollar"}
+        
+        url = f"{Config.BASE_URL}list" 
+        params = {'access_key': Config.API_KEY}
+        try:
+            response = requests.get(url, params=params, timeout=10)
+            data = response.json()
+            return data.get('currencies', {})
+        except Exception as e:
+            LoggingService.log_event("error", f"API list failure: {e}")
+            return {}
+
     def get_latest_rates(self, base_currency='EUR', selected_currencies=None):
         if Config.USE_MOCK_DATA:
-            StorageService.log_event("info", "Načítání aktuálních MOCK dat.")
+            LoggingService.log_event("info", "Načítání aktuálních MOCK dat.")
             return self._get_mock_data(base_currency, selected_currencies)
         
         url = f"{Config.BASE_URL}live"
         params = {'access_key': Config.API_KEY, 'source': base_currency, 'format': 1}
-        
         try:
             response = requests.get(url, params=params, timeout=10)
-            response.raise_for_status()
             data = response.json()
-            StorageService.log_event("info", f"Úspěšné volání API (latest) pro {base_currency}")
             return self._process_data(data, base_currency, selected_currencies)
         except Exception as e:
-            StorageService.log_event("error", f"Selhání API (latest): {str(e)}")
+            LoggingService.log_event("error", f"Selhání API (latest): {str(e)}")
             return None
 
     def get_historical_rates(self, date, base_currency='EUR', selected_currencies=None):
         if Config.USE_MOCK_DATA:
-            StorageService.log_event("info", f"Načítání historických MOCK dat pro datum {date}.")
             return self._get_mock_data(base_currency, selected_currencies)
-
-        url = f"{Config.BASE_URL}{date}"
-        params = {'access_key': Config.API_KEY, 'source': base_currency, 'format': 1}
-
-        try:
-            response = requests.get(url, params=params, timeout=10)
-            response.raise_for_status()
-            data = response.json()
-            StorageService.log_event("info", f"Úspěšné volání API (history) pro datum {date}")
-            return self._process_data(data, base_currency, selected_currencies)
-        except Exception as e:
-            StorageService.log_event("error", f"Selhání API (history) pro {date}: {str(e)}")
-            return None
+        return None
 
     def _process_data(self, data, base_currency, selected_currencies):
         raw_quotes = data.get('quotes', {})
@@ -52,9 +60,10 @@ class ExchangeService:
 
     def _get_mock_data(self, base_currency, selected_currencies):
         try:
-            with open('tests/samples/sample_rates.json', 'r', encoding='utf-8') as f:
+            path = os.path.join('tests', 'samples', 'sample_rates.json')
+            with open(path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
             return self._process_data(data, base_currency, selected_currencies)
         except Exception as e:
-            StorageService.log_event("error", f"Chyba při načítání MOCK souboru: {e}")
+            LoggingService.log_event("error", f"Chyba při načítání MOCK souboru: {e}")
             return None

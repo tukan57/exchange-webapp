@@ -13,6 +13,8 @@ def dashboard():
     setts = StorageService.load_settings()
     exchange_svc = ExchangeService()
     
+    all_currencies = exchange_svc.get_all_currencies()
+    
     data = exchange_svc.get_latest_rates(
         setts.get('baseCurrency', 'EUR'), 
         setts.get('selectedCurrencies', [])
@@ -21,12 +23,8 @@ def dashboard():
     rates = data.get('rates', {}) if data else {}
     stats = AnalyticsService.get_min_max(rates)
     
-    return render_template('index.html', rates=rates, stats=stats, settings=setts)
-
-@views_bp.route('/settings')
-def settings_page():
-    if 'user_id' not in session:
-        return redirect(url_for('auth.login'))
-    
-    setts = StorageService.load_settings()
-    return render_template('settings.html', settings=setts)
+    return render_template('index.html', 
+                           rates=rates, 
+                           stats=stats, 
+                           settings=setts, 
+                           all_currencies=all_currencies)
