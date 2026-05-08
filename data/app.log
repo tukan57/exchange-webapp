@@ -600,3 +600,7 @@
 [2026-05-08 13:02:23] [INFO] 127.0.0.1 - - [08/May/2026 13:02:23] "POST /api/settings HTTP/1.1" 200 -
 [2026-05-08 13:02:24] [INFO] Načítání aktuálních MOCK dat.
 [2026-05-08 13:02:24] [INFO] 127.0.0.1 - - [08/May/2026 13:02:24] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-08 13:04:49] [INFO]  * Detected change in 'f:\\Škola\\exchange-webapp\\services\\storage_service.py', reloading
+[2026-05-08 13:04:50] [INFO]  * Restarting with stat
+[2026-05-08 13:04:50] [WARNING]  * Debugger is active!
+[2026-05-08 13:04:50] [INFO]  * Debugger PIN: 142-472-412
