@@ -15,12 +15,19 @@ def create_app():
     app.register_blueprint(auth_bp)
     app.register_blueprint(views_bp)
     app.register_blueprint(api_bp)
+
+    app.config.update(
+    SESSION_COOKIE_SECURE=False,
+    SESSION_COOKIE_HTTPONLY=True,
+    SESSION_COOKIE_SAMESITE='Lax',
+)
     
     return app
 
+# Tento řádek je klíčový pro Gunicorn na Renderu
 app = create_app()
 
 if __name__ == '__main__':
-
+    # Na Renderu se port bere z proměnné prostředí, lokálně zůstane 5000
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port, debug=True)

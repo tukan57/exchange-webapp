@@ -235,3 +235,36 @@ function setupSettingsForm() {
 }
 
 function logout() { window.location.href = '/logout'; }
+
+function initLogin() {
+    const loginForm = document.getElementById('loginForm');
+    if (!loginForm) return;
+
+    loginForm.addEventListener('submit', async (e) => {
+        e.preventDefault(); // Zabrání klasickému refresh stránky
+
+        const formData = new FormData(loginForm);
+        
+        try {
+            const response = await fetch('/login', {
+                method: 'POST',
+                body: formData // Flask request.form.get() tohle přečte automaticky
+            });
+
+            if (response.redirected) {
+                // Pokud jsi v auth.py použil Možnost A (return redirect)
+                window.location.href = response.url;
+            } else {
+                const data = await response.json();
+                if (data.success) {
+                    window.location.href = data.redirect;
+                } else {
+                    alert(data.message || "Neplatné údaje");
+                }
+            }
+        } catch (error) {
+            console.error("Login Error:", error);
+            alert("Chyba při komunikaci se serverem.");
+        }
+    });
+}
