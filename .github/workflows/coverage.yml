@@ -1,0 +1,40 @@
+name: Python Coverage
+on: [pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: read
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pytest pytest-cov
+          # pip install -r requirements.txt (uncomment if you have one)
+
+      - name: Run Tests with Pytest
+        # --cov=. tells pytest to check the current directory
+        # --cov-report=xml creates the 'coverage.xml' file needed for the next step
+        run: pytest --cov=. --cov-report=xml
+
+      - name: Code Coverage Summary
+        uses: irongut/CodeCoverageSummary@v1.3.0
+        with:
+          filename: coverage.xml
+          badge: true
+          fail_below_min: true
+          format: markdown
+          thresholds: '70 90'
+
+      - name: Write to Job Summary
+        run: cat code-coverage-results.md >> $GITHUB_STEP_SUMMARY
