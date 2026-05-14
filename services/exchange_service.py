@@ -54,6 +54,7 @@ class ExchangeService:
                 data = response.json()
                 # Uložíme do cache pouze pokud je odpověď úspěšná
                 if data and data.get('success'):
+                    LoggingService.log_event("info", f"Vyčtení nejnovějších dat pro {base_currency}.")
                     self._cache[base_currency] = data
                     self._last_fetch_time[base_currency] = now
             except Exception as e:
@@ -66,7 +67,7 @@ class ExchangeService:
         """Načte historické kurzy pro konkrétní datum (YYYY-MM-DD)"""
         if Config.USE_MOCK_DATA:
             LoggingService.log_event("info", f"Načítání MOCK historických dat pro {date}.")
-            data = self._load_mock_file('sample_rates.json') # Pro mock použijeme stejný soubor
+            data = self._load_mock_file('sample_rates.json')
         else:
             url = f"{Config.BASE_URL}historical"
             params = {
@@ -77,6 +78,7 @@ class ExchangeService:
             }
             try:
                 response = requests.get(url, params=params, timeout=10)
+                LoggingService.log_event("info", f"Vyčtení historických dat pro {date}, {base_currency}.")
                 data = response.json()
             except Exception as e:
                 LoggingService.log_event("error", f"Selhání API (historical): {str(e)}")

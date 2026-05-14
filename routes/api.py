@@ -26,6 +26,7 @@ def get_rates():
         LoggingService.log_event("info", f"Načtena historická data pro {date}")
     else:
         data = exchange_svc.get_latest_rates(base, selected)
+        LoggingService.log_event("info", f"Načtena nejnovější data pro {date}")
         
     return jsonify(data)
 
