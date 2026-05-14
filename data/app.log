@@ -1329,3 +1329,24 @@
 [2026-05-08 16:49:37] [INFO]  * Restarting with stat
 [2026-05-08 16:49:38] [WARNING]  * Debugger is active!
 [2026-05-08 16:49:38] [INFO]  * Debugger PIN: 142-472-412
+[2026-05-14 13:20:07] [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://147.230.231.109:5000
+[2026-05-14 13:20:07] [INFO] [33mPress CTRL+C to quit[0m
+[2026-05-14 13:20:07] [INFO]  * Restarting with stat
+[2026-05-14 13:20:08] [WARNING]  * Debugger is active!
+[2026-05-14 13:20:08] [INFO]  * Debugger PIN: 638-401-077
+[2026-05-14 13:20:13] [INFO] Načten seznam měn z list.json.
+[2026-05-14 13:20:13] [INFO] 127.0.0.1 - - [14/May/2026 13:20:13] "GET / HTTP/1.1" 200 -
+[2026-05-14 13:20:13] [INFO] 127.0.0.1 - - [14/May/2026 13:20:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+[2026-05-14 13:20:13] [INFO] 127.0.0.1 - - [14/May/2026 13:20:13] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+[2026-05-14 13:20:13] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-14 13:20:13] [INFO] 127.0.0.1 - - [14/May/2026 13:20:13] "GET /api/rates HTTP/1.1" 200 -
+[2026-05-14 13:20:18] [INFO] 127.0.0.1 - - [14/May/2026 13:20:18] "[32mGET /login HTTP/1.1[0m" 302 -
+[2026-05-14 13:20:18] [INFO] Načten seznam měn z list.json.
+[2026-05-14 13:20:18] [INFO] 127.0.0.1 - - [14/May/2026 13:20:18] "GET / HTTP/1.1" 200 -
+[2026-05-14 13:20:18] [INFO] 127.0.0.1 - - [14/May/2026 13:20:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+[2026-05-14 13:20:18] [INFO] 127.0.0.1 - - [14/May/2026 13:20:18] "[36mGET /static/main.js HTTP/1.1[0m" 304 -
+[2026-05-14 13:20:18] [INFO] Načítání aktuálních MOCK dat.
+[2026-05-14 13:20:18] [INFO] 127.0.0.1 - - [14/May/2026 13:20:18] "GET /api/rates HTTP/1.1" 200 -

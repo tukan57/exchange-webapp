@@ -16,6 +16,7 @@ class AnalyticsService:
                   if currency_code in date_data]
         return sum(values) / len(values) if values else 0
     
+    @staticmethod
     def get_min_max(rates):
         if not rates: return None
         return {
