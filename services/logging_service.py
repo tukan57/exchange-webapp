@@ -20,9 +20,13 @@ class LoggingService:
         level = level.lower()
         if level == 'info':
             logging.info(message)
+            print(f"[INFO] {message}")
         elif level == 'warning':
             logging.warning(message)
+            print(f"[WARNING] {message}")
         elif level == 'error':
             logging.error(message)
+            print(f"[ERROR] {message}")
         else:
             logging.debug(message)
+            print(f"[DEBUG] {message}")
