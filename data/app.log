@@ -1411,3 +1411,5 @@
 [2026-05-14 13:49:25] [INFO]  * Debugger PIN: 638-401-077
 [2026-05-14 13:49:27] [INFO]  * Detected change in 'c:\\Users\\tukan\\Downloads\\WEBAPP\\exchange-webapp\\services\\logging_service.py', reloading
 [2026-05-14 13:49:27] [INFO]  * Restarting with stat
+[2026-05-14 13:49:28] [WARNING]  * Debugger is active!
+[2026-05-14 13:49:28] [INFO]  * Debugger PIN: 638-401-077
